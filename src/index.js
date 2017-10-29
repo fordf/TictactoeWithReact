@@ -32,7 +32,6 @@ class Board extends React.Component {
 
   render() {
     let rows = [];
-    range
     for (let x of range(3)) {
       let squares = [];
       for (let y of range(3)) {
