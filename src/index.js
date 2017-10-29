@@ -32,7 +32,6 @@ class Board extends React.Component {
 
   render() {
     let rows = [];
-    range
     for (let x of range(3)) {
       let squares = [];
       for (let y of range(3)) {
@@ -89,7 +88,7 @@ class Game extends React.Component {
   }
 
   render() {
-    const history = this.state.history.slice(0, this.state.stepNumber + 1);
+    const history = this.state.history.slice();
     const current = history[this.state.stepNumber];
 
     let status;
